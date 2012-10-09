@@ -35,6 +35,7 @@ namespace TheKeeperOfTime
             _path = string.Format("{0}{1}.txt", dir, DateTime.Now.ToString("dd-MM-yyyy"));
 
             File.Open(_path, FileMode.OpenOrCreate).Close();
+            this.CenterToScreen();
         }
 
         private void PasteFile()
@@ -99,6 +100,7 @@ namespace TheKeeperOfTime
                 PasteFile();
                 _pasted = true;
             }
+            this.TopMost = true;
         }
 
       
