@@ -68,6 +68,7 @@ namespace TheKeeperOfTime
                 }
                 input.Text = string.Empty;
                 PasteFile();
+                Close();
             }
             else if (e.KeyValue == 27) // ESC
             {
