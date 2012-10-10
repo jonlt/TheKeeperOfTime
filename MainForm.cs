@@ -36,6 +36,8 @@ namespace TheKeeperOfTime
 
             File.Open(_path, FileMode.OpenOrCreate).Close();
             this.CenterToScreen();
+            this.TopMost = true;
+            this.Focus();
         }
 
         private void PasteFile()
@@ -102,6 +104,7 @@ namespace TheKeeperOfTime
                 _pasted = true;
             }
             this.TopMost = true;
+            this.Focus();
         }
 
       
